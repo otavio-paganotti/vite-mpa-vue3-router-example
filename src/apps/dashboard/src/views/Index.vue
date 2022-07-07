@@ -1,6 +1,6 @@
 <template>
   <div>Oi</div>
-  <a href="/index">index</a>
+  <a href="/react">Go to React</a>
 </template>
 
 <script lang="ts">
