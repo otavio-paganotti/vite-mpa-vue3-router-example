@@ -42,5 +42,12 @@ export default (config) => {
         }
       }),
     ],
+    resolve: {
+      alias: app.reduce<Record<string, any>>((_paths, pathName) => {
+        _paths[`@${pathName}`] = require('path').resolve(__dirname, `./src/apps/${pathName}`)
+
+        return _paths;
+      }, {}),
+    },
   });
 }
