@@ -1,0 +1,26 @@
+{
+  "name": "vite-mpa-vue3-router-example",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "src/apps/index",
+    "src/apps/dashboard"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vite-plugin-multiple-page": "^0.4.3",
+    "vue": "^3.2.25",
+    "vue-router": "^4.0.12"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.3",
+    "@vitejs/plugin-vue": "^2.3.3",
+    "typescript": "^4.5.4",
+    "vite": "^2.9.9",
+    "vue-tsc": "^0.34.7"
+  }
+}
