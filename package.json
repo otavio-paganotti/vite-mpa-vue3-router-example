@@ -11,6 +11,9 @@
     "preview": "vite preview",
     "prettier": "prettier --write .",
     "eslint": "eslint --ext .ts,vue --ignore-path .gitignore .",
+    "test:unit": "vitest run --passWithNoTests",
+    "test:unit:coverage": "vitest run --coverage",
+    "test:unit:watch": "vitest --passWithNoTests --watch"
   },
   "dependencies": {
     "vite-plugin-multiple-page": "^0.4.3",
@@ -18,19 +21,24 @@
     "vue-router": "^4.0.12"
   },
   "devDependencies": {
+    "@types/node": "^16.11.7",
     "@typescript-eslint/eslint-plugin": "^5.12.1",
     "@typescript-eslint/parser": "^5.12.1",
     "@vitejs/plugin-vue": "^2.3.3",
+    "@vue/test-utils": "^2.0.0-rc.19",
     "autoprefixer": "^10.4.2",
+    "cross-env": "^7.0.3",
     "eslint": "^8.9.0",
     "eslint-config-prettier": "^8.4.0",
     "eslint-plugin-vue": "^8.5.0",
+    "happy-dom": "^6.0.4",
     "postcss": "^8.4.5",
     "postcss-import": "^14.0.2",
     "postcss-nested": "^5.0.6",
     "prettier": "^2.4.1",
     "typescript": "^4.5.4",
     "vite": "^2.9.9",
+    "vitest": "^0.19.1",
     "vue-tsc": "^0.35.0"
   }
 }
