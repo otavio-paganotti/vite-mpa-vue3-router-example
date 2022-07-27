@@ -8,6 +8,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "prettier": "prettier --write .",
     "eslint": "eslint --ext .ts,vue --ignore-path .gitignore .",
   },
   "dependencies": {
@@ -19,9 +21,14 @@
     "@typescript-eslint/eslint-plugin": "^5.12.1",
     "@typescript-eslint/parser": "^5.12.1",
     "@vitejs/plugin-vue": "^2.3.3",
+    "autoprefixer": "^10.4.2",
     "eslint": "^8.9.0",
     "eslint-config-prettier": "^8.4.0",
     "eslint-plugin-vue": "^8.5.0",
+    "postcss": "^8.4.5",
+    "postcss-import": "^14.0.2",
+    "postcss-nested": "^5.0.6",
+    "prettier": "^2.4.1",
     "typescript": "^4.5.4",
     "vite": "^2.9.9",
     "vue-tsc": "^0.35.0"
