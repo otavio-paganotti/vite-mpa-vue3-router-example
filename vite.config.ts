@@ -14,9 +14,9 @@ export default (config) => {
 
   const pages = app.reduce<Record<string, any>>((_pages, pageName, currentIndex) => {
     _pages[pageName] = {
-      entry: `src/apps/${pageName}/src/main.${extensions[currentIndex]}`,
-      filename: `/apps/${pageName}.html`,
-      template: `src/apps/${pageName}/index.html`,
+      entry: `packages/${pageName}/src/main.${extensions[currentIndex]}`,
+      filename: `/${pageName}.html`,
+      template: `packages/${pageName}/index.html`,
       inject: {
         data: {
           title: `mpa-${pageName}`
@@ -25,7 +25,7 @@ export default (config) => {
     };
     rewrites.push({
       from: `/${pageName}`,
-      to: posix.join('/', `/src/apps/${pageName}/index.html`)
+      to: posix.join('/', `/packages/${pageName}/index.html`)
     });
     return _pages;
   }, {});
@@ -42,7 +42,7 @@ export default (config) => {
     ],
     resolve: {
       alias: app.reduce<Record<string, any>>((_paths, pathName) => {
-        _paths[`@${pathName}`] = require('path').resolve(__dirname, `./src/apps/${pathName}`)
+        _paths[`@${pathName}`] = require('path').resolve(__dirname, `./packages/${pathName}/src`)
 
         return _paths;
       }, {}),

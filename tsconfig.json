@@ -14,11 +14,19 @@
     "allowSyntheticDefaultImports": true,
     "resolveJsonModule": true,
     "sourceMap": true,
-    "baseUrl": ".",
     "lib": ["esnext", "dom", "dom.iterable", "scripthost"],
     "types": ["vite/client", "node"],
+    "paths": {
+      "@*": ["../../packages/*/src"],
+    }
   },
-  "exclude": ["node_modules/**/*"],
-  "include": ["src/apps/**/*.ts", "src/apps/**/*.d.ts", "src/apps/**/*.tsx", "src/apps/**/*.vue"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "exclude": ["node_modules/**/*", "dist/**/*", ".yarn/**/*"],
+  "include": [
+    "packages/**/src/**/*.d.ts",
+    "packages/**/src/**/*.ts",
+    "packages/**/src/**/*.vue",
+  ],
+  "references": [
+    { "path": "./tsconfig.node.json" },
+  ]
 }
