@@ -1,11 +1,9 @@
 {
   "name": "vite-mpa-vue3-router-example",
+  "packageManager": "yarn@3.2.2",
   "private": true,
-  "version": "1.0.0",
   "workspaces": [
-    "src/apps/index",
-    "src/apps/dashboard",
-    "src/apps/react"
+    "packages/*"
   ],
   "scripts": {
     "dev": "vite",
@@ -21,6 +19,6 @@
     "@vitejs/plugin-vue": "^2.3.3",
     "typescript": "^4.5.4",
     "vite": "^2.9.9",
-    "vue-tsc": "^0.34.7"
+    "vue-tsc": "^0.35.0"
   }
 }
