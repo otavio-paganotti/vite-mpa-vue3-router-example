@@ -2,7 +2,7 @@ import {
   RouteRecordRaw,
   Router,
   createRouter,
-  createWebHashHistory
+  createWebHashHistory,
 } from 'vue-router';
 
 const routes: RouteRecordRaw[] = [
@@ -14,7 +14,7 @@ const routes: RouteRecordRaw[] = [
         path: '/',
         name: 'Index',
         component: () => import('@dashboard/views/Index.vue'),
-      }
+      },
     ],
   },
 ];

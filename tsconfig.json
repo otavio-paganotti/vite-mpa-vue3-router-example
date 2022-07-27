@@ -17,16 +17,14 @@
     "lib": ["esnext", "dom", "dom.iterable", "scripthost"],
     "types": ["vite/client", "node"],
     "paths": {
-      "@*": ["../../packages/*/src"],
+      "@*": ["../../packages/*/src"]
     }
   },
   "exclude": ["node_modules/**/*", "dist/**/*", ".yarn/**/*"],
   "include": [
     "packages/**/src/**/*.d.ts",
     "packages/**/src/**/*.ts",
-    "packages/**/src/**/*.vue",
+    "packages/**/src/**/*.vue"
   ],
-  "references": [
-    { "path": "./tsconfig.node.json" },
-  ]
+  "references": [{ "path": "./tsconfig.node.json" }]
 }

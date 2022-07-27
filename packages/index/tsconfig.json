@@ -3,5 +3,5 @@
   "compilerOptions": {
     "baseUrl": "./"
   },
-  "files": ["./src/env.d.ts"],
+  "files": ["./src/env.d.ts"]
 }

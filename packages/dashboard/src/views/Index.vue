@@ -4,5 +4,4 @@
 </template>
 
 <script lang="ts">
-const item: number = 1;
 </script>

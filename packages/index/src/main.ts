@@ -1,5 +1,5 @@
-import { createApp } from 'vue';
 import { RouterView } from 'vue-router';
+import { createApp } from 'vue';
 import router from './router';
 
 const app = createApp(RouterView);
