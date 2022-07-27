@@ -1,7 +1,6 @@
 import { defineConfig, loadEnv } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import mpaPlugin from 'vite-plugin-multiple-page';
-import react from '@vitejs/plugin-react';
 import { posix } from 'path';
 
 // https://vitejs.dev/config/
@@ -34,7 +33,6 @@ export default (config) => {
   return defineConfig({
     plugins: [
       vue(),
-      react(),
       mpaPlugin({
         pages,
         historyApiFallback: {
