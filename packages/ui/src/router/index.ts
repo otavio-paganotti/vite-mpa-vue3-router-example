@@ -8,12 +8,12 @@ import {
 const routes: RouteRecordRaw[] = [
   {
     path: '/',
-    component: () => import('@index/layouts/Default.vue'),
+    component: () => import('@ui/layouts/Default.vue'),
     children: [
       {
         path: '/',
         name: 'Index',
-        component: () => import('@index/views/Index.vue'),
+        component: () => import('@ui/views/Index.vue'),
       },
     ],
   },

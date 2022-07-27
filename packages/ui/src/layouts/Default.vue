@@ -1,5 +1,5 @@
 <template>
-  <h1>Layout default do index</h1>
+  <h1>Layout default do ui</h1>
   <router-view />
 </template>
 
