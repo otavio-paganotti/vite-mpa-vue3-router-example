@@ -9,6 +9,7 @@ lerna-debug.log*
 
 # yarn.lock file
 yarn.lock
+.yarn
 
 node_modules
 dist
@@ -26,3 +27,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# packages/*
+# !packages/public
