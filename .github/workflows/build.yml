@@ -21,9 +21,7 @@ jobs:
           node-version: '16.x'
 
       - name: Yarn
-        run: |
-          yarn set version berry
-          yarn install --frozen-lockfile
+        run: yarn install --immutable-cache
 
       - name: Build
         run: yarn build
