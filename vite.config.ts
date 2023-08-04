@@ -1,7 +1,7 @@
 /// <reference types="vitest" />
 import { defineConfig, loadEnv } from 'vite';
-import { posix, resolve } from 'path';
-import mpaPlugin from 'vite-plugin-multiple-page';
+import mpaPlugin from 'vite-plugin-mpa-plus';
+import { resolve } from 'path';
 import vue from '@vitejs/plugin-vue';
 
 // https://vitejs.dev/config/
@@ -27,7 +27,7 @@ export default (config) => {
       };
       rewrites.push({
         from: `/${pageName}`,
-        to: posix.join('/', `/packages/${pageName}/index.html`),
+        to: `/packages/${pageName}/index.html`,
       });
       return _pages;
     },
