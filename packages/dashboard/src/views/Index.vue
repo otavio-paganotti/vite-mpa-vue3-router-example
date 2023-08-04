@@ -3,5 +3,4 @@
   <a href="/ui">Go to ui</a>
 </template>
 
-<script lang="ts">
-</script>
+<script lang="ts"></script>

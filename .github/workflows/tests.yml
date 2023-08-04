@@ -24,4 +24,3 @@ jobs:
 
       - name: Test code unit (Vitest)
         run: yarn test:unit
-
