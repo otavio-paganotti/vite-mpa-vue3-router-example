@@ -16,7 +16,7 @@
     "test:unit:watch": "vitest --passWithNoTests --watch"
   },
   "dependencies": {
-    "vite-plugin-multiple-page": "^0.4.3",
+    "vite-plugin-mpa-plus": "^0.5.4",
     "vue": "^3.2.25",
     "vue-router": "^4.0.12"
   },
